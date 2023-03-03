@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Recetas Cocina</string>
+    <string name="busca_receta">Bucar receta</string>
+    <string name="o">o</string>
+    <string name="selecciona_una_receta">Selecciona una receta</string>
+    <string name="error_de_comunicacion_servidor">Error de comunicacion con el servidor</string>
+    <string name="notificacion">Notificación</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="recetas">Recetas Internacionales</string>
+    <string name="detalle_de_recetas">¿Comó hacerlo?</string>
+    <string name="origen_de_receta">Origen de la receta</string>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/carv_view_recetas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d5dp"
+        android:layout_marginTop="@dimen/d5dp"
+        android:layout_marginEnd="@dimen/d5dp"
+        android:layout_marginBottom="@dimen/d5dp"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/d10dp"
+        app:cardElevation="@dimen/d5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/d10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imv_receta"
+                    android:layout_width="@dimen/d70dp"
+                    android:layout_height="@dimen/d70dp"/>
+
+                <TextView
+                    android:id="@+id/tv_nombre_receta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/d20dp"
+                    android:text="Pastes Mexicanos"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/d18sp"
+                    android:fontFamily="@font/e_core_regular"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_decripcion_receta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="200"
+                    android:fontFamily="@font/e_core_regular"
+                    android:text="PREPARACIÓN 1.Cernir la harina con sal y agregar el huevo, la manteca y la cerveza necesaria para que forme una pasta ligera.2.Se extiende hasta que quede de un espesor de medio cm. luego, cortar la pasta en forma de ruedas, en el centro colocar el relleno y doblar a manera de empanada, formar la trenza con la mano.3.Disponer en bandejas engrasadas con manteca, y dejar reposar durante dos horas. Después bañarlas con la leche y cocinarlos en el horno que debe estar a 180º C 4.Se hace el relleno friendo la cebolla y los chiles cortados en formas de rajas con mantequilla junto a los trocitos de filete o la carne molida y las papas crudas cortadas en cuadritos.5.Cuando esta bien fritas, añadirle el caldo, la sal y la pimienta. Dejar hervir a fuego lento hasta que espese, luego agregue el perejil picado y servir caliente."
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_mas_detalles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Más detalles..."
+                android:gravity="end"
+                android:fontFamily="@font/e_core_regular"
+                android:layout_marginTop="@dimen/d10dp"
+                android:textColor="@color/purple_app"
+                android:textSize="@dimen/d18sp"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.RecetasCocina" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/purple_app</item>
+        <item name="colorSecondaryVariant">@color/purple_app</item>
+        <item name="colorOnSecondary">@color/purple_app</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/purple_app</item>
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/e_core_regular</item>
+    </style>
+
+    <style name="SerachViewTheme" parent="">
+        <!-- Query Text Color -->
+        <item name="android:textColorPrimary">@color/black</item>
+        <!--This line changes the color of icons in toolbar (back, overflow menu icons)-->
+        <item name="android:textColorSecondary">@color/gris_fuerte</item>
+        <!-- Text Size -->
+        <item name="android:textSize">20sp</item>
+        <!-- Hint Color -->
+        <item name="android:textColorHint">@color/gris_fuerte</item>
+
+        <item name="android:hint">@color/gris_fuerte</item>
+        <!-- Icon Color -->
+        <!--        <item name="android:tint">@color/blue_resaltado</item>-->
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:background">@color/white</item>
+        <item name="android:statusBarColor">@color/purple_app</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="postSplashScreenTheme">@style/Theme.RecetasCocina</item>
+        <item name="android:fontFamily">@font/e_core_regular</item>
+    </style>
+
+</resources>
