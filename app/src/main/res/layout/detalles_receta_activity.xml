@@ -14,72 +14,77 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/white"
-        android:padding="@dimen/d20dp">
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/img_receta_detalles"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:padding="@dimen/d20dp">
 
-    <TextView
-        android:id="@+id/tv_nombre_receta"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Pastes mexicanos"
-        android:textColor="@color/black"
-        android:textSize="@dimen/d18sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginTop="@dimen/d10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_receta_detalles" />
+            <ImageView
+                android:id="@+id/img_receta_detalles"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_detalle_receta"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="PREPARACIÓN 1.Cernir la harina con sal y agregar el huevo, la manteca y la cerveza necesaria para que forme una pasta ligera.2.Se extiende hasta que quede de un espesor de medio cm. luego, cortar la pasta en forma de ruedas, en el centro colocar el relleno y doblar a manera de empanada, formar la trenza con la mano.3.Disponer en bandejas engrasadas con manteca, y dejar reposar durante dos horas. Después bañarlas con la leche y cocinarlos en el horno que debe estar a 180º C 4.Se hace el relleno friendo la cebolla y los chiles cortados en formas de rajas con mantequilla junto a los trocitos de filete o la carne molida y las papas crudas cortadas en cuadritos.5.Cuando esta bien fritas, añadirle el caldo, la sal y la pimienta. Dejar hervir a fuego lento hasta que espese, luego agregue el perejil picado y servir caliente."
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_nombre_receta"
-        android:layout_marginTop="@dimen/d20dp"/>
+            <TextView
+                android:id="@+id/tv_nombre_receta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d10dp"
+                android:gravity="center"
+                android:text="Pastes mexicanos"
+                android:textColor="@color/black"
+                android:textSize="@dimen/d18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_receta_detalles" />
 
-    <TextView
-        android:id="@+id/tv_origen_receta"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Origen de la receta: México"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:textSize="@dimen/d18sp"
-        android:layout_marginTop="@dimen/d20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_detalle_receta" />
+            <TextView
+                android:id="@+id/tv_detalle_receta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d20dp"
+                android:text="PREPARACIÓN 1.Cernir la harina con sal y agregar el huevo, la manteca y la cerveza necesaria para que forme una pasta ligera.2.Se extiende hasta que quede de un espesor de medio cm. luego, cortar la pasta en forma de ruedas, en el centro colocar el relleno y doblar a manera de empanada, formar la trenza con la mano.3.Disponer en bandejas engrasadas con manteca, y dejar reposar durante dos horas. Después bañarlas con la leche y cocinarlos en el horno que debe estar a 180º C 4.Se hace el relleno friendo la cebolla y los chiles cortados en formas de rajas con mantequilla junto a los trocitos de filete o la carne molida y las papas crudas cortadas en cuadritos.5.Cuando esta bien fritas, añadirle el caldo, la sal y la pimienta. Dejar hervir a fuego lento hasta que espese, luego agregue el perejil picado y servir caliente."
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nombre_receta" />
 
-    <TextView
-        android:id="@+id/tv_mas_detalles"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ver ubicación de origen..."
-        android:textColor="@color/purple_app"
-        android:textSize="@dimen/d18sp"
-        android:layout_marginTop="@dimen/d20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_origen_receta" />
+            <TextView
+                android:id="@+id/tv_origen_receta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d20dp"
+                android:text="Origen de la receta: México"
+                android:textColor="@color/black"
+                android:textSize="@dimen/d18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_detalle_receta" />
+
+            <TextView
+                android:id="@+id/tv_mas_detalles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d20dp"
+                android:text="Ver ubicación de origen..."
+                android:textColor="@color/purple_app"
+                android:textSize="@dimen/d18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_origen_receta" />
 
 
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </LinearLayout>

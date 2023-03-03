@@ -54,6 +54,5 @@ dependencies {
     implementation 'com.squareup.okhttp3:logging-interceptor:4.3.0'
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
     implementation 'androidx.fragment:fragment-ktx:1.5.5'
-    implementation 'de.hdodenhof:circleimageview:3.1.0'
     implementation 'com.google.android.gms:play-services-maps:18.1.0'
 }
